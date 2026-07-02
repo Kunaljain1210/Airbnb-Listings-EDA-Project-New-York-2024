@@ -1,58 +1,177 @@
-# Airbnb-Listings-EDA-Project-New-York-2024
+# 🏠 Airbnb Listings EDA Project – New York 2024
 
-**Project Overview**
-This project performs Exploratory Data Analysis (EDA) on New York Airbnb data to uncover trends and patterns in rental listings. We use libraries like Pandas, Numpy, Matplotlib, Seabornfor cleaning, visualization, and analysis.
+## 📌 Project Overview
 
-**Objective**
-The goal of this project is to:
+This project performs **Exploratory Data Analysis (EDA)** on the **New York Airbnb Listings 2024** dataset to uncover meaningful insights about rental prices, room types, host behavior, availability, and neighborhood trends.
 
-Analyze room types, prices, and availability across different neighborhoods.
-Understand host behavior and listing patterns.
-Detect potential outliers in prices.
-Provide recommendations for guests and hosts based on insights.
+The analysis was carried out using **Python**, leveraging libraries such as **Pandas, NumPy, Matplotlib, Seaborn, and Plotly** for data cleaning, visualization, and analysis.
 
-**Dataset**
-The dataset contains 20,765 entries and 22 features, including:
+---
 
-id: Unique identifier for each listing
-name: Title of the Airbnb listing
-host_name: Name of the host
-neighborhood_group: Group (borough) where the listing is located
-latitude/longitude: Geolocation of listings
-price: Nightly rental price
-room_type: Type of accommodation (e.g., entire home, private room)
-reviews_per_month: Average monthly reviews for the listing
-availability_365: Number of available days in the year
+## 🎯 Objective
 
-Steps and Workflow
-1. Data Cleaning
-Handle missing data: price, neighborhood, and beds columns had null values.
-Fix data types: Converted last_review to a datetime object.
-Remove outliers: Listings with prices > $1,000 were capped to avoid skewed visualizations.
-2. EDA (Exploratory Data Analysis)
-Room type distribution:
+The primary objectives of this project are to:
 
-Visualized the count of each room type using bar plots.
-Identified Entire home/apt as the most common room type.
-Neighborhood group insights:
+- Analyze room types, pricing, and availability across New York neighborhoods.
+- Understand host behavior and listing patterns.
+- Detect and handle price outliers.
+- Discover relationships between reviews, pricing, and availability.
+- Provide actionable insights for Airbnb hosts and guests.
 
-Analyzed price variations by boroughs.
-Manhattan had the highest average prices.
-Availability trends:
+---
 
-Used heatmaps to show correlations among price, availability_365, number_of_reviews, and beds.
-Price distribution:
+## 📂 Dataset Information
 
-Used histograms to show the distribution of prices.
-Majority of the listings were priced between $50 - $300.
-Host listings:
+- **Total Records:** 20,765
+- **Total Features:** 22
 
-Analyzed hosts with multiple listings using boxplots to identify key contributors.
-Review behavior:
+### Important Features
 
-Used pair plots to show relationships between number of reviews, price, and availability.
-3. Data Visualization
-Pairplot: To see correlations among price, availability, and number of reviews.
-Heatmap: Showing correlations among numerical features.
-Histograms and Boxplots: To detect outliers in price.
-Bar Charts: Displaying room types and neighborhood group distributions.
+- **id** – Unique listing identifier
+- **name** – Airbnb listing title
+- **host_name** – Name of the host
+- **neighbourhood_group** – Borough where the listing is located
+- **latitude & longitude** – Geographic location
+- **price** – Nightly rental price
+- **room_type** – Entire Home, Private Room, Shared Room, etc.
+- **reviews_per_month** – Average monthly reviews
+- **availability_365** – Number of available days in a year
+
+---
+
+# 🛠️ Project Workflow
+
+## 1️⃣ Data Cleaning
+
+- Removed duplicate records.
+- Handled missing values in important columns.
+- Converted **last_review** to DateTime format.
+- Corrected data types where necessary.
+- Treated extreme price outliers to improve visualization quality.
+
+---
+
+## 2️⃣ Exploratory Data Analysis (EDA)
+
+### 🛏️ Room Type Analysis
+
+- Analyzed distribution of different room types.
+- Identified **Entire Home/Apt** as the most common listing type.
+
+### 📍 Neighborhood Analysis
+
+- Compared listing prices across boroughs.
+- Found **Manhattan** to have the highest average Airbnb prices.
+
+### 💰 Price Distribution
+
+- Visualized price distribution using histograms.
+- Observed that most listings are priced between **$50 and $300**.
+
+### 📅 Availability Analysis
+
+- Studied listing availability throughout the year.
+- Compared availability with pricing and reviews.
+
+### 👤 Host Analysis
+
+- Identified hosts managing multiple properties.
+- Explored professional hosting trends.
+
+### ⭐ Review Analysis
+
+- Examined relationships between:
+  - Price
+  - Number of Reviews
+  - Reviews Per Month
+  - Availability
+
+---
+
+# 📊 Data Visualizations
+
+The project includes various visualizations, including:
+
+- 📈 Bar Charts
+- 📊 Histograms
+- 📦 Box Plots
+- 🔥 Correlation Heatmap
+- 📉 Pair Plot
+- 📍 Scatter Plots
+- 🌍 Location-based Visualizations
+- 📋 Count Plots
+
+---
+
+# 🔍 Key Insights
+
+## 💰 Price Trends
+
+- Manhattan has the highest Airbnb prices.
+- Brooklyn ranks second in average listing price.
+- Entire homes/apartments are significantly more expensive than private or shared rooms.
+
+---
+
+## 🏠 Room Type Distribution
+
+- Entire Home/Apt is the most frequently listed room type.
+- Private rooms provide more affordable accommodation options.
+
+---
+
+## 📈 Availability Trends
+
+- Listings with higher yearly availability generally have:
+  - Lower prices
+  - Higher review counts
+
+---
+
+## 👤 Host Behavior
+
+- A small number of hosts manage multiple listings.
+- Indicates the presence of professional Airbnb hosts.
+
+---
+
+## ⚠️ Price Outliers
+
+- Some listings were priced above **$10,000** per night.
+- These extreme values were treated during analysis to avoid misleading visualizations.
+
+---
+
+# 📚 Technologies Used
+
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- Plotly
+- Jupyter Notebook
+
+---
+
+# 🚀 Skills Demonstrated
+
+- Data Cleaning
+- Exploratory Data Analysis (EDA)
+- Data Visualization
+- Feature Understanding
+- Statistical Analysis
+- Business Insight Generation
+- Storytelling with Data
+
+---
+
+# 📌 Conclusion
+
+This project demonstrates how exploratory data analysis can transform raw Airbnb listing data into actionable business insights.
+
+The analysis highlights pricing trends, neighborhood characteristics, host behavior, and customer preferences, enabling better decision-making for both Airbnb hosts and travelers.
+
+---
+
+## ⭐ If you found this project helpful, consider giving it a Star!
